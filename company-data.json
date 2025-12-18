@@ -1,0 +1,63 @@
+{
+  "company_name": "MIT Digital & Multan Institute of Information Technology",
+  "location": "New Shalimar Colony, Bosan Road, Multan, Pakistan",
+  "contact": {
+    "phone": "+92 301 7552523",
+    "email": "info@mitdigital.net",
+    "alt_email": "info@multaniti.com"
+  },
+  "digital_services": [
+    {
+      "name": "Website Development",
+      "details": "Custom-built, responsive, and SEO-friendly websites."
+    },
+    {
+      "name": "SEO & Backlinks",
+      "details": "Boosting search visibility and domain authority."
+    },
+    {
+      "name": "Digital Marketing",
+      "details": "Data-driven campaigns to drive real business results."
+    },
+    {
+      "name": "Graphic Design",
+      "details": "Logos, branding, and creative visual structures."
+    },
+    {
+      "name": "Amazon FBA Services",
+      "details": "Expert management for Amazon Wholesale and PL businesses."
+    }
+  ],
+  "educational_courses": [
+    {
+      "category": "University Programs",
+      "list": ["BS-IT", "BS-CS", "BS-English", "ADP-IT", "ADP-CS"]
+    },
+    {
+      "category": "Skill Development",
+      "list": [
+        "Amazon FBA Wholesale",
+        "Etsy Dropshipping",
+        "Web Development (WordPress & Coding)",
+        "Digital Marketing",
+        "Graphic Designing",
+        "Video Editing",
+        "SEO + Blogging"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where are you located?",
+      "answer": "We are located at New Shalimar Colony, Bosan Road, Multan."
+    },
+    {
+      "question": "Do you offer online classes?",
+      "answer": "We focus on Physical Classes to ensure hands-on experience, but please contact us for specific online options."
+    },
+    {
+      "question": "What is your mission?",
+      "answer": "To provide a safe, innovative atmosphere for students to learn skills and earn their first dollar."
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT Chatbot</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: transparent; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        
+        /* Chat Widget Container */
+        .chat-container {
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        .chat-header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* Chat History Area */
+        .chat-box {
+            flex: 1;
+            overflow-y: auto;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #f9f9f9;
+        }
+
+        /* Messages */
+        .message { padding: 10px 14px; border-radius: 15px; max-width: 80%; font-size: 14px; line-height: 1.4; }
+        .user-message { background-color: #007bff; color: white; align-self: flex-end; border-bottom-right-radius: 2px; }
+        .bot-message { background-color: #e0e0e0; color: #333; align-self: flex-start; border-bottom-left-radius: 2px; }
+
+        /* Input Area */
+        .input-area {
+            display: flex;
+            border-top: 1px solid #ddd;
+            padding: 10px;
+            background: white;
+        }
+        input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            outline: none;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover { background-color: #0056b3; }
+        
+        /* Loading Dot Animation */
+        .typing-indicator { font-style: italic; color: #888; font-size: 12px; margin-left: 10px; display: none; }
+    </style>
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <span>🤖</span> MIT Digital Support
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">Hi! I can help you with MIT courses or digital services. How can I assist you?</div>
+        </div>
+        <div id="typing-indicator" class="typing-indicator">Typing...</div>
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Ask about courses or services..." onkeypress="handleEnter(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        const chatBox = document.getElementById('chat-box');
+        const userInput = document.getElementById('user-input');
+        const typingIndicator = document.getElementById('typing-indicator');
+
+        function handleEnter(e) {
+            if (e.key === 'Enter') sendMessage();
+        }
+
+        async function sendMessage() {
+            const message = userInput.value;
+            if (message.trim() === "") return;
+
+            // 1. Add User Message
+            appendMessage(message, 'user-message');
+            userInput.value = '';
+            
+            // Show typing indicator
+            typingIndicator.style.display = 'block';
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            // 2. Send to Backend (Relative Path)
+            try {
+                // CHANGED: Removed "http://localhost:3000" so it works on Render automatically
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: message })
+                });
+
+                const data = await response.json();
+                
+                // Hide typing indicator
+                typingIndicator.style.display = 'none';
+
+                // 3. Add Bot Response
+                appendMessage(data.reply, 'bot-message');
+
+            } catch (error) {
+                typingIndicator.style.display = 'none';
+                appendMessage("Sorry, I'm having trouble connecting. Please try again.", 'bot-message');
+            }
+        }
+
+        function appendMessage(text, className) {
+            const div = document.createElement('div');
+            div.classList.add('message', className);
+            div.textContent = text;
+            chatBox.appendChild(div);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+    </script>
+</body>
+</html>
