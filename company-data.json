@@ -1,63 +1,178 @@
+
 {
-  "company_name": "MIT Digital & Multan Institute of Information Technology",
-  "location": "New Shalimar Colony, Bosan Road, Multan, Pakistan",
-  "contact": {
-    "phone": "+92 301 7552523",
-    "email": "info@mitdigital.net",
-    "alt_email": "info@multaniti.com"
+  "company_profile": {
+    "name": "MIT Digital",
+    "tagline": "Accelerate Growth with AI-Powered Automation & Digital Innovation",
+    "description": "MIT Digital is a results-driven digital agency and educational institute. We help businesses scale through AI automation, advanced web development, and data-driven marketing, while also providing top-tier IT education to the next generation of developers.",
+    "location": "New Shalimar Colony, Bosan Road, Multan, Pakistan",
+    "founded_year": "2020",
+    "stats": {
+      "projects_delivered": "150+",
+      "client_satisfaction": "98%",
+      "industries_served": "10+"
+    }
+  },
+  "contact_info": {
+    "phone_primary": "+92 301 7552523",
+    "phone_secondary": "+92 306 6554349",
+    "email_primary": "info@mitdigital.net",
+    "email_secondary": "info@multaniti.com",
+    "website": "www.mitdigital.net",
+    "availability": "24/7 Support for Clients"
   },
   "digital_services": [
     {
-      "name": "Website Development",
-      "details": "Custom-built, responsive, and SEO-friendly websites."
+      "name": "AI Automation & Voice Agents",
+      "description": "Intelligent automation solutions designed to replace manual work with smart systems.",
+      "features": [
+        "Custom AI Chatbots (Web & WhatsApp)",
+        "Human-like Voice Agents for inbound/outbound calls",
+        "n8n Workflow Automation",
+        "CRM & Database Integrations"
+      ]
     },
     {
-      "name": "SEO & Backlinks",
-      "details": "Boosting search visibility and domain authority."
+      "name": "WordPress Development",
+      "description": "Scalable, SEO-friendly, and secure WordPress websites built for business growth.",
+      "features": [
+        "Custom Theme Development",
+        "WooCommerce Store Creation",
+        "Elementor Pro Customization",
+        "Speed & Security Optimization",
+        "Plugin Development"
+      ]
+    },
+    {
+      "name": "Custom Web Development",
+      "description": "High-performance web applications built with modern code stacks for maximum speed and scalability.",
+      "features": [
+        "MERN Stack (MongoDB, Express, React, Node)",
+        "Next.js Development",
+        "Mobile-First Responsive Design",
+        "Custom UI/UX Architecture"
+      ]
+    },
+    {
+      "name": "Shopify Store Development",
+      "description": "Conversion-focused e-commerce stores designed to turn visitors into buyers.",
+      "features": [
+        "Store Setup & Migration",
+        "Custom Liquid Coding",
+        "Conversion Rate Optimization (CRO)",
+        "Payment Gateway Integration",
+        "Product & Collection Organization"
+      ]
+    },
+    {
+      "name": "SEO & Authority Backlinks",
+      "description": "Data-driven SEO strategies to improve search rankings and domain authority.",
+      "features": [
+        "Technical SEO Audits",
+        "On-Page Optimization",
+        "High-Authority Backlink Building",
+        "Local SEO & Google My Business",
+        "Keyword Research & Competitor Analysis"
+      ]
     },
     {
       "name": "Digital Marketing",
-      "details": "Data-driven campaigns to drive real business results."
+      "description": "ROI-focused marketing campaigns to acquire loyal customers and drive revenue.",
+      "features": [
+        "Social Media Marketing (SMM)",
+        "Google Ads & PPC Campaigns",
+        "Email Marketing Automation",
+        "Content Strategy"
+      ]
     },
     {
-      "name": "Graphic Design",
-      "details": "Logos, branding, and creative visual structures."
+      "name": "Graphic Design & Branding",
+      "description": "Visual storytelling that aligns with your brand identity.",
+      "features": [
+        "Logo Design & Branding Kits",
+        "Social Media Post Design",
+        "UI/UX Prototyping",
+        "Marketing Collaterals"
+      ]
+    },
+    {
+      "name": "Video Editing",
+      "description": "Professional video post-production for marketing and social engagement.",
+      "features": [
+        "Reels & TikTok Short-form Content",
+        "YouTube Long-form Editing",
+        "Motion Graphics",
+        "Color Grading & Sound Design"
+      ]
     },
     {
       "name": "Amazon FBA Services",
-      "details": "Expert management for Amazon Wholesale and PL businesses."
+      "description": "Expert management for Amazon e-commerce businesses.",
+      "features": [
+        "Amazon Wholesale Management",
+        "Private Label (PL) Launch",
+        "Product Hunting & Sourcing",
+        "Seller Central Management"
+      ]
     }
   ],
   "educational_courses": [
     {
       "category": "University Programs",
-      "list": ["BS-IT", "BS-CS", "BS-English", "ADP-IT", "ADP-CS"]
+      "description": "Formal degree programs affiliated with recognized institutions.",
+      "list": [
+        "BS-IT (Bachelor of Science in Information Technology)",
+        "BS-CS (Bachelor of Science in Computer Science)",
+        "BS-English",
+        "ADP-IT (Associate Degree Program)",
+        "ADP-CS"
+      ]
     },
     {
-      "category": "Skill Development",
+      "category": "Skill Development & Short Courses",
+      "description": "Hands-on practical training to help students earn their first dollar online.",
       "list": [
+        "AI Automation & Chatbot Development",
+        "Web Development (MERN Stack & WordPress)",
         "Amazon FBA Wholesale",
         "Etsy Dropshipping",
-        "Web Development (WordPress & Coding)",
-        "Digital Marketing",
+        "Digital Marketing & Ads",
         "Graphic Designing",
         "Video Editing",
-        "SEO + Blogging"
+        "SEO & Blogging"
       ]
     }
   ],
   "faqs": [
     {
+      "category": "General",
       "question": "Where are you located?",
-      "answer": "We are located at New Shalimar Colony, Bosan Road, Multan."
+      "answer": "We are located at New Shalimar Colony, Bosan Road, Multan, Pakistan."
     },
     {
+      "category": "Services",
+      "question": "Do you offer AI automation for small businesses?",
+      "answer": "Yes! Our AI solutions are scalable. We can build simple chatbots or complex voice agents depending on your business size and needs."
+    },
+    {
+      "category": "Education",
       "question": "Do you offer online classes?",
-      "answer": "We focus on Physical Classes to ensure hands-on experience, but please contact us for specific online options."
+      "answer": "We primarily focus on Physical Classes to ensure hands-on mentorship and a professional environment, but please contact us for specific online availability."
     },
     {
+      "category": "General",
       "question": "What is your mission?",
-      "answer": "To provide a safe, innovative atmosphere for students to learn skills and earn their first dollar."
+      "answer": "Our mission is twofold: To help businesses grow through digital innovation, and to provide a safe, innovative atmosphere for students to learn skills and earn their first income."
+    },
+    {
+      "category": "Services",
+      "question": "Do you require long-term contracts for agency work?",
+      "answer": "No. We believe in earning your trust through results. We offer flexible engagement models without locking you into long-term binding contracts."
+    },
+    {
+      "category": "Services",
+      "question": "How do you measure success?",
+      "answer": "We are data-driven. We track success using real-time analytics, ROI reports, and clear performance metrics like traffic growth, lead volume, and sales conversions."
     }
   ]
 }
+
